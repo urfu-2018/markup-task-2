@@ -12,7 +12,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope article
+                {
+                    border-top: 1px solid #000;
+                }
+
+                .global-scope article:first-of-type
+                {
+                    border-top: none;
+                }
+
+                .global-scope article:nth-child(even)
+                {
+                    background: #ff6;
+                }
             </style>
 
             <section class="global-result">
