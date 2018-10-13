@@ -12,7 +12,35 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div:not(:empty)
+                {
+                    background: #ffb366;
+                }
+
+                div:empty
+                {
+                    background: #fff;
+                }
+
+                div:first-child :last-child
+                {
+                    background: #98ff66;
+                }
+
+                div:nth-child(2) :nth-child(2n+2)
+                {
+                    background: #ff6698;
+                }
+
+                div:nth-child(3) :nth-child(2n+1)
+                {
+                    background: #6698ff;
+                }
+
+                div:last-child :first-child
+                {
+                    background: #ffff66;
+                }
             </style>
 
             <section class="global-result">
