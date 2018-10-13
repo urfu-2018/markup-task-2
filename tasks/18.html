@@ -12,7 +12,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    opacity: .5;
+                }
+
+                div:hover
+                {
+                    opacity: 1;
+                }
+
+                article:hover div:not(:hover)
+                {
+                    opacity: .3;
+                }
             </style>
 
             <section class="global-result">
