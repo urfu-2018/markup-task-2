@@ -12,7 +12,22 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div:first-child
+                {
+                    background: #6698ff;
+                    border: 2px solid #000;
+                }
+
+                .global-scope div:nth-child(2n)
+                {
+                    background: #ff6698;
+                    border: 2px solid #000;
+                }
+
+                .global-scope .c2:not(:first-child)
+                {
+                    background: #ffb366;
+                }
             </style>
 
             <section class="global-result">

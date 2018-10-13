@@ -12,7 +12,16 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div > div:not(:only-child)
+                {
+                    background: #ff6698;
+                }
+
+                .global-scope div > div:first-child:nth-last-child(2),
+                div:first-child:nth-last-child(2) ~ div
+                {
+                    background: #fff;
+                }
             </style>
 
             <section class="global-result">
