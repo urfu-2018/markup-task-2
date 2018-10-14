@@ -12,7 +12,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope a:not([href*='my-site.ru']):active,
+                .global-scope a:not([href*='my-site.ru']):hover,
+                .global-scope a:not([href*='my-site.ru']):visited
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">
