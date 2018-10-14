@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Задача «Ацссорти»</title>
+    <meta charset="utf-8">
+    <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-    <h2>Задача «Ацссорти»</h2>
-    <ul>
-        <li><a href="./tasks/1.html">Задание #1</a></li>
-        <li><a href="./tasks/2.html">Задание #2</a></li>
-        <li><a href="./tasks/3.html">Задание #3</a></li>
-        <li><a href="./tasks/4.html">Задание #4</a></li>
-        <li><a href="./tasks/5.html">Задание #5</a></li>
-        <li><a href="./tasks/6.html">Задание #6</a></li>
-        <li><a href="./tasks/7.html">Задание #7</a></li>
-        <li><a href="./tasks/8.html">Задание #8</a></li>
-        <li><a href="./tasks/9.html">Задание #9</a></li>
-        <li><a href="./tasks/10.html">Задание #10</a></li>
-        <li><a href="./tasks/11.html">Задание #11</a></li>
-        <li><a href="./tasks/12.html">Задание #12</a></li>
-        <li><a href="./tasks/13.html">Задание #13</a></li>
-        <li><a href="./tasks/14.html">Задание #14</a></li>
-        <li><a href="./tasks/15.html">Задание #15</a></li>
-        <li><a href="./tasks/16.html">Задание #16</a></li>
-        <li><a href="./tasks/17.html">Задание #17</a></li>
-        <li><a href="./tasks/18.html">Задание #18</a></li>
-        <li><a href="./tasks/19.html">Задание #19</a></li>
-        <li><a href="./tasks/20.html">Задание #20</a></li>
-    </ul>
+    <form class="registrationForm">
+        <header class="registrationHeader">Хочу Подписаться!</header>
+        <p class="info bottomPadding5px">
+            После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
+        </p>
+        <section class="registrationInputBlock">
+            <label class="line topPadding10px">Ваше имя
+                <input
+                    type="text" pattern="[^0-9]*" class="wideInput"
+                    placeholder="Имя" required
+                >
+            </label>
+            <label class="line topPadding10px">Email
+                <input type="email" class="wideInput"
+                       placeholder="email@yandex.ru" required
+                >
+            </label>
+            <label class="line topPadding10px">Телефон
+                <input
+                    type="tel" class="wideInput" placeholder="+7 (999) 000-77-66" required
+                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18"
+                    maxlength="18"
+                >
+            </label>
+        </section>
+        <section class="chooseNotificationType">
+            <p class="info">Хочу получать уведомления:</p>
+            <label class="line"><input type="checkbox">на почту</label>
+            <label class="line"><input type="checkbox">на телефон</label>
+        </section>
+        <button class="subscribeButton">Подписаться</button>
+    </form>
+    <table class="letter">
+        <tr>
+            <td>Здравствуйте, Николай!</td>
+            <td rowspan="2">
+                <img width="130" src="yandex.gif" alt="Yandex">
+            </td>
+        </tr>
+        <tr>
+            <td>Вы подписались на уведомления о новостях Яндекса.</td>
+        </tr>
+        <tr>
+            <td>Уведомления будут приходить вам на этот email и на указанный вами телефон -
+                +79xxxxxxx78.
+            </td>
+        </tr>
+        <tr>
+            <td>Для подтверждения перейдите по <a href="#">ссылке</a>.</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#">Пожаловаться</a></td>
+            <td>&copy; 2018, <a href="#">Яндекс</a></td>
+        </tr>
+    </table>
 </body>
 </html>
+
