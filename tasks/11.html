@@ -12,7 +12,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope :first-child
+                {
+                    border: 3px solid #ff6698;
+                }
+
+                .global-scope :last-child
+                {
+                    border: 3px solid #98ff66;
+                }
+
+                .global-scope :first-child:focus
+                {
+                    border: 3px solid #6698ff;
+                }
             </style>
 
             <section class="global-result">
