@@ -12,7 +12,8 @@
 
         <main class="global-results">
             <style>
-                .red-gt2:not(:nth-last-child(n + 3)) > div
+                .red-gt2 > :nth-last-child(n + 3),
+                .red-gt2 > :nth-last-child(n + 3) ~ div
                 {
                     background: #ff6698;
                 }
