@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+<main class="global-results">
+    <style>
+        a[href]:link
+        {
+            color: #6698ff;
+        }
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <a class="link" href="https://ya.ru">link</a>
-                    <a class="link">pseudolink</a>
-                </article>
-            </section>
+        a[href]:hover
+        {
+            color: #ff6698;
+        }
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+        a[href]:active
+        {
+            color: #98ff66;
+        }
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+        a[href]:visited
+        {
+            color: #ffb366;
+        }
 
-        <script src="../global.js"></script>
-    </body>
+        a:not([href]):hover
+        {
+            opacity: .5;
+        }
+
+        a:not([href]):active
+        {
+            opacity: 1;
+        }
+    </style>
+
+    <section class="global-result">
+        <article class="global-scope">
+            <!--Подхачил что бы ссылка по умолчанию не была посещенной-->
+            <a class="link" href="https://ya1.ru">link</a>
+            <a class="link">pseudolink</a>
+        </article>
+    </section>
+
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
+
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
+
+<script src="../global.js"></script>
+</body>
 </html>
