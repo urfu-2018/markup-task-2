@@ -12,7 +12,16 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .red-gt2 > :first-child:not(:nth-last-child(2)),
+                .red-gt2 > :first-child:not(:nth-last-child(2)) ~ div
+                {
+                    background: #ff6698;
+                }
+
+                .red-gt2 > :first-child:only-child
+                {
+                    background: #fff;
+                }
             </style>
 
             <section class="global-result">
