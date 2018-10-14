@@ -12,15 +12,12 @@
 
         <main class="global-results">
             <style>
-                [href='https://vk.com']
+                .global-scope :first-child
                 {
                     color: #6698ff;
                 }
 
-                /* не смог понять, почему не работает такой селектор:
-                    .global-scope:first-child и от него вытекающие */
-
-                [href='https://vk.com'] ~ a
+                .global-scope :first-child ~ a
                 {
                     color: #ff6698;
                 }
