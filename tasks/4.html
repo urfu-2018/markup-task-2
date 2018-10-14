@@ -12,6 +12,15 @@
 
         <main class="global-results">
             <style>
+                article > article:nth-child(even)
+                {
+                    background: #ff6;
+                }
+
+                section > article > article:nth-child(n+5)
+                {
+                    border-top: 1px solid #000;
+                }
                 /* your styles here */
             </style>
 
@@ -24,7 +33,7 @@
                     <hr>
                     <article>Первый</article>
                     <article>Второй</article>
-                    <article>Третий</article>
+                    <article>Первый</article>
                     <article>Четвертый</article>
                     <article>Пятый</article>
                     <hr>
