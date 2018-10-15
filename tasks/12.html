@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div
+                {
+                    background-color: #ff6;
+                }
+
+                .global-scope div:not(:nth-child(2n)):not(:nth-child(5))
+                {
+                    background-color: #ffb366;
+                }
             </style>
 
             <section class="global-result">
