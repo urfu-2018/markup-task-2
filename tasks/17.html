@@ -12,9 +12,36 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
-            </style>
+                input[type='checkbox']:checked ~ input
+                {
+                    outline: 1px solid #ff6698;
+                }
 
+                input[type='checkbox']:checked
+                {
+                    position: relative;
+                    visibility: hidden;
+                    cursor: pointer;
+                }
+
+                input[type='checkbox']:checked:after
+                {
+                    display: block;
+                    content: '\2714';
+                    position: absolute;
+                    top: 0;
+                    visibility: visible;
+                    height: 10px;
+                    line-height: 10px;
+                    width: 10px;
+                    text-align: center;
+                    border-radius: 2px;
+                    background: #6698ff;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 10px;
+                }
+            </style>
             <section class="global-result">
                 <article class="global-scope">
                     <input type="checkbox">
