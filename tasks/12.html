@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+<main class="global-results">
+    <style>
+        .global-scope div
+        {
+            background: #ffff65;
+        }
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <div>
-                    </div>
-                    <div></div>
-                    <div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div>
-                    </div>
-                    <div></div>
-                    <div>
-                    </div>
-                </article>
-            </section>
+        .global-scope div:first-child
+        {
+            background: #ffb365;
+        }
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+        .global-scope div:nth-child(3)
+        {
+            background: #ffb365;
+        }
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+        .global-scope div:nth-child(7)
+        {
+            background: #ffb365;
+        }
 
-        <script src="../global.js"></script>
-    </body>
+        .global-scope div:nth-child(9)
+        {
+            background: #ffb365;
+        }
+    </style>
+
+    <section class="global-result">
+        <article class="global-scope">
+            <div>
+            </div>
+            <div></div>
+            <div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+            </div>
+            <div></div>
+            <div>
+            </div>
+        </article>
+    </section>
+
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
+
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
+
+<script src="../global.js"></script>
+</body>
 </html>
