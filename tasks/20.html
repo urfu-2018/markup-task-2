@@ -12,7 +12,17 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .red-gt2 div:nth-child(n)
+                {
+                    background: #ff6698;
+                }
+
+                .red-gt2 div:only-child,
+                .red-gt2 div:first-child + div:last-child,
+                .red-gt2 div:first-child:nth-last-child(2)
+                {
+                    background: white;
+                }
             </style>
 
             <section class="global-result">
