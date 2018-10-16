@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <main class="global-results">
-            <style>
-                div:empty 
-                {
-                    background: #ff6698;
-                }
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
 
-                div.c1 
-                {
-                    background: #6698ff;
-                }
+<body>
+    <h1 class="global-heading">&nbsp;</h1>
+    <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
-                div#id1
-                {
-                    background: #ffb366;
-                }
+    <main class="global-results">
+        <style>
+            div:empty 
+            {
+                background: #ff6698;
+            }
 
-                div.c7 
-                {
-                    background: #ff6 !important;
-                }
-            </style>
+            div.c1 
+            {
+                background: #6698ff;
+            }
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <div></div>
-                    <div class="c1"></div>
-                    <div id="id1" class="c2 c3 c4 c5 c6"></div>
-                    <div class="c7" style="background-color: #fff" ></div>
-                </article>
-            </section>
+            div#id1
+            {
+                background: #ffb366;
+            }
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+            div.c7 
+            {
+                background: #ff6 !important;
+            }
+        </style>
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+        <section class="global-result">
+            <article class="global-scope">
+                <div></div>
+                <div class="c1"></div>
+                <div id="id1" class="c2 c3 c4 c5 c6"></div>
+                <div class="c7" style="background-color: #fff"></div>
+            </article>
+        </section>
 
-        <script src="../global.js"></script>
-    </body>
+        <section class="global-result">
+            <img class="global-goal">
+        </section>
+    </main>
+
+    <nav class="global-nav">
+        <a class="global-prev">Предыдущее</a>
+        <a class="global-next">Следующее</a>
+    </nav>
+
+    <script src="../global.js"></script>
+</body>
+
 </html>
