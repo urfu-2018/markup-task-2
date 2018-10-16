@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
         <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -13,6 +12,11 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                div:nth-of-type(n+2):not(:last-child)
+                {
+                    opacity: .2;
+                }
             </style>
 
             <section class="global-result">
