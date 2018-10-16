@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
-        <main class="global-results">
-            <ul class="twocolumn">
-                <li id="first"></li>
-                <li id="second"></li>
-                <li id="third"></li>
-                <li id="fourth"></li>
-            </ul>
-            <style>
-    ul.twocolumn{
-    margin: 70px;
-    padding: 0;
-    list-style-type: none;                       
-}
-                        
-li{
-    float: left;
-    width: 70px;
-    height: 70px;
-    margin-bottom:5px;
-    margin-right: 5px;
-    border-radius: 10px;
-    background: #ff6698;
-    border: 1px solid white;
-    line-height: 80px;  
-}
-                        
-#third {
-    clear: left;
-    float: left;
-}
-                        
-li:nth-child(3n+1) {
-	background: #6698ff;
-}
-                        
-li:nth-child(3) {
-    background: #98ff66;
-}
+<main class="global-results">
+    <ul class="twocolumn">
+        <li id="first"></li>
+        <li id="second"></li>
+        <li id="third"></li>
+        <li id="fourth"></li>
+    </ul>
+    <style>
+        ul.twocolumn {
+            margin: 70px;
+            padding: 0;
+            list-style-type: none;
+        }
 
-ul.twocolumn {
-    margin:70px;
-    padding:0;
-    list-style-type: none;  
-}
-li{
-    float: left;
-    width:70px;
-    height:70px;
-    margin-bottom:5px;
-    margin-right:5px;
-    border-radius:10px;
-    background: #ff6698;
-    border:1px solid white;
-    line-height:80px;
-  
-}
-#third {
-    clear: left;
-    float: left;
+        li {
+            float: left;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            border-radius: 10px;
+            background: #ff6698;
+            border: 1px solid white;
+            line-height: 80px;
+        }
 
-}
-li:nth-child(3n+1) {
-	background: #6698ff;
-}
-li:nth-child(3) {
-	background: #98ff66;
-}
-                        
-            </style>
+        #third {
+            clear: left;
+            float: left;
+        }
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <div></div>
-                    <div class="c1"></div>
-                    <div id="id"></div>
-                    <aside></aside>
-                </article>
-            </section>
+        li:nth-child(3n+1) {
+            background: #6698ff;
+        }
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+        li:nth-child(3) {
+            background: #98ff66;
+        }
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+        ul.twocolumn {
+            margin: 70px;
+            padding: 0;
+            list-style-type: none;
+        }
 
-        <script src="../global.js"></script>
-    </body>
+        li {
+            float: left;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            border-radius: 10px;
+            background: #ff6698;
+            border: 1px solid white;
+            line-height: 80px;
+
+        }
+
+        #third {
+            clear: left;
+            float: left;
+
+        }
+
+        li:nth-child(3n+1) {
+            background: #6698ff;
+        }
+
+        li:nth-child(3) {
+            background: #98ff66;
+        }
+
+    </style>
+
+    <section class="global-result">
+        <article class="global-scope">
+            <div></div>
+            <div class="c1"></div>
+            <div id="id"></div>
+            <aside></aside>
+        </article>
+    </section>
+
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
+
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
+
+<script src="../global.js"></script>
+</body>
 </html>
