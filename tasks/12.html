@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div:empty
+                {
+                    background: #ff6;
+                }
+
+                .global-scope div:not(:empty)
+                {
+                    background: #ffb366;
+                }
             </style>
 
             <section class="global-result">
