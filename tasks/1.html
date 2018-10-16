@@ -11,7 +11,14 @@
         <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
         <main class="global-results">
+            <ul class = "twocolumn">
+                <li></li id="first>
+                <li></li id="second>
+                <li id="third"></li>
+                <li id="fourth></li>
+            </ul>
             <style>
+<<<<<<< HEAD
     ul.twocolumn{
     margin: 70px;
     padding: 0;
@@ -43,6 +50,36 @@ li:nth-child(3) {
     background: #98ff66;
 }
                         
+=======
+    ul.twocolumn {
+    margin:70px;
+    padding:0;
+    list-style-type: none;  
+}
+li{
+    float: left;
+    width:70px;
+    height:70px;
+    margin-bottom:5px;
+    margin-right:5px;
+    border-radius:10px;
+    background: #ff6698;
+    border:1px solid white;
+    line-height:80px;
+  
+}
+#third {
+    clear: left;
+    float: left;
+
+}
+li:nth-child(3n+1) {
+	background: #6698ff;
+}
+li:nth-child(3) {
+	background: #98ff66;
+}
+>>>>>>> parent of ce7f81f... Revert "task1_1"
             </style>
 
             <section class="global-result">
