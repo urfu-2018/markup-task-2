@@ -12,10 +12,8 @@
 
         <main class="global-results">
             <style>
-                .global-scope div :nth-last-child(4),
-                .global-scope div :nth-last-child(4):first-child ~ div,
-                .global-scope div :nth-last-child(3),
-                .global-scope div :nth-last-child(3):first-child ~ div
+                .global-scope div :nth-last-child(n + 3),
+                .global-scope div :nth-last-child(n + 3) ~ div
                 {
                     background: #ff6698;
                 }
