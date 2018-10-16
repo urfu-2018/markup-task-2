@@ -12,7 +12,14 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                /* based on */
+                /* https://css-tricks.com/extremely-handy-nth-child-recipes-sass-mixins/ */
+
+                .global-scope .red-gt2 > :nth-last-child(3) ~ div,
+                .global-scope .red-gt2 > :nth-last-child(n + 3)
+                {
+                    background: #ff6698;
+                }
             </style>
 
             <section class="global-result">
