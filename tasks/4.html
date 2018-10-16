@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article > article:nth-child(even)
+                {
+                    background: #ffff66;
+                }
+
+                article > article:nth-of-type(n + 2)
+                {
+                    border-top: 1px solid #000;
+                }
             </style>
 
             <section class="global-result">
