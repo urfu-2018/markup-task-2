@@ -12,9 +12,20 @@
 
         <main class="global-results">
             <style>
-                .global-scope div:not(:hover)
+
+                article > div
                 {
                     opacity: .5;
+                }
+
+                article:hover > div
+                {
+                    opacity: .3;
+                }
+
+                article > div:hover
+                {
+                    opacity: 1;
                 }
             </style>
 
