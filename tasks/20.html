@@ -12,7 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div > div:nth-last-child(n + 2):first-child,
+                div > div:nth-last-child(n + 2):first-child ~ div
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">

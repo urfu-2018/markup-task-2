@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article > div:not(:first-of-type)
+                {
+                    opacity: .5;
+                }
+
+                article > div:last-of-type
+                {
+                    opacity: 1;
+                }
             </style>
 
             <section class="global-result">
