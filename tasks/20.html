@@ -12,7 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div :nth-last-child(n + 3),
+                .global-scope div :nth-last-child(n + 3) ~ div
+                {
+                    background: #ff6698;
+                }
             </style>
 
             <section class="global-result">
