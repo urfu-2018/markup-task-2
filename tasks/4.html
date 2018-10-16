@@ -12,12 +12,12 @@
 
         <main class="global-results">
             <style>
-                article article:nth-child(2n)
+                article article:nth-of-type(2n + 1)
                 {
                     background: #ff6;
                 }
 
-                article article:nth-child(2n + 1)
+                article article:first-of-type ~ article
                 {
                     border-top: 1px solid #000;
                 }
