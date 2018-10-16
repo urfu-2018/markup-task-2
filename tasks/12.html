@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <div>
-                    </div>
-                    <div></div>
-                    <div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div>
-                    </div>
-                    <div></div>
-                    <div>
-                    </div>
-                </article>
-            </section>
+<body>
+    <h1 class="global-heading">&nbsp;</h1>
+    <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+    <main class="global-results">
+        <style>
+            div:nth-child(n) {
+                background: #eebc7f;
+            }
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+            article div:nth-child(2n) {
+                background: #f5ff7b;
+            }
 
-        <script src="../global.js"></script>
-    </body>
+            article div:nth-child(5) {
+                background: #f5ff7b;
+            }
+        </style>
+
+        <section class="global-result">
+            <article class="global-scope">
+                <div>
+                </div>
+                <div></div>
+                <div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                </div>
+                <div></div>
+                <div>
+                </div>
+            </article>
+        </section>
+
+        <section class="global-result">
+            <img class="global-goal">
+        </section>
+    </main>
+
+    <nav class="global-nav">
+        <a class="global-prev">Предыдущее</a>
+        <a class="global-next">Следующее</a>
+    </nav>
+
+    <script src="../global.js"></script>
+</body>
+
 </html>
