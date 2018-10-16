@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input[type='checkbox']:checked ~ input
+                {
+                    outline: 1px solid #ff6698;
+                }
+
+                input[type='checkbox']:checked
+                {
+                    outline: 0 !important;
+                }
             </style>
 
             <section class="global-result">
