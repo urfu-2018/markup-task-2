@@ -8,5 +8,8 @@
     "@mapbox/stylelint-processor-arbitrary-tags": "0.2.0",
     "stylelint": "9.6.0",
     "stylelint-config-hrundel": "2.0.0"
+  },
+  "devDependencies": {
+    "standart": "6.1.0"
   }
 }
