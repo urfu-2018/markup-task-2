@@ -12,7 +12,16 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article ~ article
+                {
+                    border-top: 1px solid #000;
+                }
+
+                article:nth-child(2n)
+                {
+                    background: #ff6;
+                }
+
             </style>
 
             <section class="global-result">
