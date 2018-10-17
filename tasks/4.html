@@ -12,7 +12,18 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope :nth-child(2n)
+                {
+                    background: #ff6;
+                }
+
+                .global-scope :nth-child(5),
+                .global-scope :nth-child(6),
+                .global-scope :nth-child(7),
+                .global-scope :nth-child(8)
+                {
+                    border-top: 1px solid #000;
+                }
             </style>
 
             <section class="global-result">

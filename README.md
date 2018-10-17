@@ -1,28 +1,30 @@
-# Задача «Ацссорти»
+# Задача «Подписка на бложик»
 
 Перед выполнением задания внимательно прочитайте:
 
 - [О всех этапах проверки задания](https://github.com/urfu-2018/guides/blob/master/workflow/overall.md)
 - [Как отправить пулл](https://github.com/urfu-2018/guides/blob/master/workflow/pull.md)
 - [Как пройти тесты](https://github.com/urfu-2018/guides/blob/master/workflow/test.md)
-- Правила оформления [javascript](https://github.com/urfu-2018/guides/blob/master/codestyle/js.md), [HTML](https://github.com/urfu-2018/guides/blob/master/codestyle/html.md) и [CSS](https://github.com/urfu-2018/guides/blob/master/codestyle/css.md) кода
+- Правила оформления [JavaScript](https://github.com/urfu-2018/guides/blob/master/codestyle/js.md), [HTML](https://github.com/urfu-2018/guides/blob/master/codestyle/html.md) и [CSS](https://github.com/urfu-2018/guides/blob/master/codestyle/css.md) кода
 
 ## Основное задание
 
-В папке `tasks` подготовлено 20 заданий на использование различных селекторов.  
-Вы должны поменять только содержимое тега `<style>` так, чтобы левая половина совпала с картинкой справа, либо с условиями, которые там описаны.  
-Каждую задачу можно решить небольшим количеством кода, главное – подобрать правильный селектор.  
+У Яндекса есть свой блог, в котором он публикует новости.  
+Подписавшись на него, можно следить за обновлением постов и комментариев.  
+Предлагается реализовать форму подписки со следующими полями:
 
-## Примечание
+![](https://user-images.githubusercontent.com/11533472/46594298-9b835180-caeb-11e8-9f27-26cf045cdb10.png)
 
-Для быстрого перехода между задачами можно пользоваться ссылками либо стрелками на клавиатуре.  
+И сверстать само письмо, так, чтобы оно корректно отображалось хотя бы в двух (например, Yandex и Google) почтовых клиентах.
 
-Используемые цвета:
+![](https://user-images.githubusercontent.com/11533472/46594332-ddac9300-caeb-11e8-8296-8340fb0b3d17.png)
 
-![](https://dummyimage.com/15/ff6698.jpg?text=+)`#ff6698`  
-![](https://dummyimage.com/15/ffb366.jpg?text=+)`#ffb366`  
-![](https://dummyimage.com/15/ffff66.jpg?text=+)`#ffff66`  
-![](https://dummyimage.com/15/98ff66.jpg?text=+)`#98ff66`  
-![](https://dummyimage.com/15/6698ff.jpg?text=+)`#6698ff`
+Не забывайте, что верстка формы должна быть:
+* Семантичной
+* Доступной
 
-<img src="https://user-images.githubusercontent.com/11533472/46813130-8af30580-cd8f-11e8-82b1-39b7a7def8b5.png">
+Кроме того:
+* Проявите фантазию и добавьте 5 разных семантичных тегов на ваш выбор
+* Не забывайте про валидацию полей формы
+
+![](https://user-images.githubusercontent.com/11533472/46606327-fb8eed80-cb15-11e8-84c1-93037792ad1b.png)

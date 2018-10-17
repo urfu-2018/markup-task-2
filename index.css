@@ -1,0 +1,67 @@
+.registrationForm
+{
+    width: 400px;
+    height: 400px;
+    border: black 1px solid;
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.chooseNotificationType
+{
+    padding-top: 10px;
+}
+
+.info
+{
+    display: block;
+    margin: 0;
+}
+
+.registrationHeader
+{
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.wideInput
+{
+    position: absolute;
+    right: 20px;
+    width: 270px;
+}
+
+.line
+{
+    position: relative;
+    display: block;
+}
+
+.topPadding10px
+{
+    padding-top: 10px;
+}
+
+.bottomPadding5px
+{
+    padding-bottom: 5px;
+}
+
+.subscribeButton
+{
+    margin-top: 20px;
+    background: ButtonHighlight;
+    border: black 1px solid;
+    width: 150px;
+    height: 40px;
+}
+
+.letter
+{
+    width: 460px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 10px;
+}
