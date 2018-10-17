@@ -12,6 +12,11 @@
 
         <main class="global-results">
             <style>
+                div:nth-last-child(n+3):not(.red-gt2),
+                div:nth-last-child(n+3) ~ div:not(.red-gt2)
+                {
+                    background: #ff6698;
+                }
                 /* your styles here */
             </style>
 
