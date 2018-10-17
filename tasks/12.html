@@ -12,15 +12,12 @@
 
         <main class="global-results">
             <style>
-                article > div
+                div:empty
                 {
                     background: #ff6;
                 }
 
-                article > div:nth-child(1),
-                article > div:nth-child(3),
-                article > div:nth-child(7),
-                article > div:nth-child(9)
+                div:not(:empty)
                 {
                     background: #ffb366;
                 }
