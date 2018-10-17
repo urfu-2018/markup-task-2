@@ -12,7 +12,30 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a.link:visited[href]
+                {
+                    color: #ffb366;
+                }
+
+                a.link[href]
+                {
+                    color: #6698ff;
+                }
+
+                a.link:hover[href]
+                {
+                    color: #ff6698;
+                }
+
+                a.link:focus[href]
+                {
+                    color: #98ff66;
+                }
+
+                a.link:hover:not([href])
+                {
+                    opacity: .3;
+                }
             </style>
 
             <section class="global-result">
