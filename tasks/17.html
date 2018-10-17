@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope > [type='checkbox']:checked ~ [type='checkbox']:not(:checked) 
+                {
+                    outline: 1px solid #ff6698;
+                }
+                 
+                .global-scope > [type='checkbox']:checked 
+                {
+                    outline: none;
+                }          
             </style>
 
             <section class="global-result">
