@@ -12,7 +12,17 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input#checkbox ~ div
+                {
+                    background-color: white;
+                    color: black;
+                }
+
+                input#checkbox:checked ~ div
+                {
+                    background-color: black;
+                    color: white;
+                }
             </style>
 
             <section class="global-result">
