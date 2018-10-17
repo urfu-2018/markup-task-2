@@ -12,7 +12,31 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article:hover > a 
+                {
+                    opacity: .5;
+                }
+
+                article:hover > a[href='https://ya.ru'] 
+                {
+                    color: #ff6698;
+                    opacity: 1;
+                }
+
+                article:active > a[href='https://ya.ru'] 
+                {
+                    color: #98ff66;
+                }
+
+                article:active > a 
+                {
+                    opacity: 1;
+                }
+                    
+                a[href='https://ya.ru']:visited 
+                {
+                    color: #ffb366;
+                }
             </style>
 
             <section class="global-result">
