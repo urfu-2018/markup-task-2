@@ -12,7 +12,25 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .link:hover[href]
+                {
+                    color: #ff6698;
+                }
+
+                .link:hover:not([href])
+                {
+                    opacity: .3;
+                }
+
+                .link[href*='ya.ru']:active
+                {
+                    color: #98ff66;
+                }
+
+                .link[href*='ya.ru']:visited
+                {
+                    color: #ffb366;
+                }
             </style>
 
             <section class="global-result">
