@@ -12,7 +12,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a[href]
+                {
+                    color: #6698ff;
+                }
+
+                a[href='']
+                {
+                    color: #ff6698;
+                }
+
+                a[href$='.zip']::after
+                {
+                    content: ' ' '\02193';
+                }
             </style>
 
             <section class="global-result">

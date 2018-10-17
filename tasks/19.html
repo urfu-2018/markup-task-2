@@ -12,7 +12,31 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    background: white;
+                }
+
+                article > div
+                {
+                    background: #ffb366;
+                }
+
+                article > div:first-child + div div:nth-child(2n)
+                {
+                    background: #ff6698;
+                }
+
+                article > div:first-child + div + div div:nth-child(2n - 1)
+                {
+                    background: #6698ff;
+                }
+
+                article > div:first-child > div:last-child,
+                article > div:last-child > div:first-child
+                {
+                    background: #98ff66;
+                }
             </style>
 
             <section class="global-result">
