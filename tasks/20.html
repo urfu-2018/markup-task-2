@@ -12,7 +12,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div > div:nth-child(n+3),
+                div > div:nth-child(2):not(:last-child),
+                div > div:nth-last-child(n+3)
+                {
+                    background: #ff6698;
+                }
             </style>
 
             <section class="global-result">
