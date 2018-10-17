@@ -12,7 +12,35 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    background: white;
+                }
+
+                .global-scope > div
+                {
+                    background: #ffb366;
+                }
+
+                .global-scope :nth-child(1) :nth-child(4)
+                {
+                    background: #98ff66;
+                }
+
+                .global-scope :nth-child(2) :nth-child(2n)
+                {
+                    background: #ff6698;
+                }
+
+                .global-scope :nth-child(3) :nth-child(2n+1)
+                {
+                    background: #6698ff;
+                }
+
+                .global-scope :nth-child(4) :nth-child(1)
+                {
+                    background: #ff6;
+                }
             </style>
 
             <section class="global-result">
