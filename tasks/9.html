@@ -12,7 +12,25 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a:first-child:hover
+                {
+                    color: #ff6698;
+                }
+
+                a:first-child:hover:not(:active) + a 
+                {
+                    color: gray;
+                }
+
+                a:first-child:active 
+                {
+                    color: #98ff66;
+                }
+
+                a:first-child:visited
+                {
+                    color: #ffb366;
+                }
             </style>
 
             <section class="global-result">
