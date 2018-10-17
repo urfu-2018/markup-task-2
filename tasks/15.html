@@ -12,7 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+            li:not(:first-child) > a[href^='archive.zip']::after,
+            a[href^='archive2.zip']::after
+            {
+                content: '\2193';
+            }
             </style>
 
             <section class="global-result">

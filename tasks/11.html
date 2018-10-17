@@ -11,8 +11,21 @@
         <p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
+            <style>               
+               input
+               {
+                   border: 3px solid #ff6698;
+               }
+
+               input:valid
+               {
+                   border: 3px solid #98ff66;
+               }
+               
+               input:focus
+               {
+                   border: 3px solid #6698ff;
+               }
             </style>
 
             <section class="global-result">
