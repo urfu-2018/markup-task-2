@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
         <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,6 +11,36 @@
 
         <main class="global-results">
             <style>
+                article > div 
+                {
+                    background: #ffb366;
+                }
+
+                div > div 
+                {
+                    background: white;
+                }
+
+                div:first-child > div:last-child 
+                {
+                    background: #98ff66;
+                }
+
+                div:nth-child(3n-1) > div:nth-child(2n) 
+                {
+                    background: #ff6698;
+                }
+
+                div:nth-child(3n) > div:nth-child(2n-1) 
+                {
+                    background: #6698ff;
+                }
+
+                div:last-child > div:first-child 
+                {
+                    background: #ff6;
+                }
+                
                 /* your styles here */
             </style>
 

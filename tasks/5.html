@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
         <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,6 +11,18 @@
 
         <main class="global-results">
             <style>
+                input ~ div
+                {
+                    color: black;
+                    background: white;
+                }
+                
+                input:checked ~ div 
+                {
+                    color: white;
+                    background: black;
+                }
+                
                 /* your styles here */
             </style>
 
