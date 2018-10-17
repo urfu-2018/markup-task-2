@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя <code>background: &lt;color&gt;</code> и самую сильную магию</p>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя <code>background:
+    &lt;color&gt;</code> и самую сильную магию</p>
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+<main class="global-results">
+    <style>
+        /* your styles here */
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <div class="red-gt2">
-                        <div></div>
-                    </div>
-                    <div class="red-gt2">
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="red-gt2">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="red-gt2">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </article>
-            </section>
+        div > div
+        {
+            background: #ff6698;
+        }
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+        div:only-child
+        {
+            background: white;
+        }
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+        div:nth-child(1):nth-last-child(2),
+        div:nth-child(2):nth-last-child(1)
+        {
+            background: white;
+        }
+    </style>
 
-        <script src="../global.js"></script>
-    </body>
+    <section class="global-result">
+        <article class="global-scope">
+            <div class="red-gt2">
+                <div></div>
+            </div>
+            <div class="red-gt2">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="red-gt2">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="red-gt2">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </article>
+    </section>
+
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
+
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
+
+<script src="../global.js"></script>
+</body>
 </html>

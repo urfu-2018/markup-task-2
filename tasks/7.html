@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>opacity: &lt;value&gt;</code>, где <code>value</code> – непрозрачность от 0 до 1</p>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p>Решите задачу, используя <code>opacity: &lt;value&gt;</code>, где <code>value</code> – непрозрачность от 0 до 1</p>
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+<main class="global-results">
+    <style>
+        /* your styles here */
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <div>
-                        <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg" alt="css 3 logo">
-                    </div>
-                    <div>
-                        <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg">
-                    </div>
-                    <div>
-                        <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg">
-                    </div>
-                    <div>
-                        <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg" alt="css3">
-                    </div>
-                </article>
-            </section>
+        .global-scope img:not([alt^='css'])
+        {
+            opacity: .2;
+        }
+    </style>
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+    <section class="global-result">
+        <article class="global-scope">
+            <div>
+                <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg" alt="css 3 logo">
+            </div>
+            <div>
+                <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg">
+            </div>
+            <div>
+                <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg">
+            </div>
+            <div>
+                <img src="http://www.codingdojo.com/blog/wp-content/uploads/css.jpg" alt="css3">
+            </div>
+        </article>
+    </section>
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
 
-        <script src="../global.js"></script>
-    </body>
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
+
+<script src="../global.js"></script>
+</body>
 </html>
