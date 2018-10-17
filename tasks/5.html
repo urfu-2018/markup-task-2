@@ -12,17 +12,17 @@
 
         <main class="global-results">
             <style>
-                input#checkbox:checked + br + div.tab 
-                {
-                    background: black;
-                    color: white;
-                }
-                
-                input#checkbox:default + br + div.tab 
+                #checkbox ~ div.tab 
                 {
                     background: white;
                     color: black;
                 }
+
+                #checkbox:checked ~ div.tab 
+                {
+                    background: black;
+                    color: white;
+                }   
             </style>
 
             <section class="global-result">
