@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>border-top: 1px solid #000</code> и <code>background: &lt;color&gt;</code></p>
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <h1>Заголовок</h1>
-                    <p style="display: none">
-                        Описание заголовка
-                    </p>
-                    <hr>
-                    <article>Первый</article>
-                    <article>Второй</article>
-                    <article>Третий</article>
-                    <article>Четвертый</article>
-                    <article>Пятый</article>
-                    <hr>
-                </article>
-            </section>
+<body>
+    <h1 class="global-heading">&nbsp;</h1>
+    <p>Решите задачу, используя <code>border-top: 1px solid #000</code> и <code>background: &lt;color&gt;</code></p>
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+    <main class="global-results">
+        <style>
+            /* your styles here */
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+            article article:nth-child(even) 
+            {
+                background: #ff6;
+            }
 
-        <script src="../global.js"></script>
-    </body>
+            article article 
+            {
+                border-top: 1px solid black;
+            }
+
+            hr 
+            {
+                border-top: 0;
+            }
+
+            .global-scope 
+            {
+                border-top: 0;
+            }
+        </style>
+
+        <section class="global-result">
+            <article class="global-scope">
+                <h1>Заголовок</h1>
+                <p style="display: none">
+                    Описание заголовка
+                </p>
+                <hr>
+                <article>Первый</article>
+                <article>Второй</article>
+                <article>Третий</article>
+                <article>Четвертый</article>
+                <article>Пятый</article>
+                <hr>
+            </article>
+        </section>
+
+        <section class="global-result">
+            <img class="global-goal">
+        </section>
+    </main>
+
+    <nav class="global-nav">
+        <a class="global-prev">Предыдущее</a>
+        <a class="global-next">Следующее</a>
+    </nav>
+
+    <script src="../global.js"></script>
+</body>
+
 </html>
