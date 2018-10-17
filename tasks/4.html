@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope article:nth-child(2n)
+                {
+                    background-color: #ff6;
+                }
+
+                .global-scope article ~ article
+                {
+                    border-top: 1px solid #000;
+                }
             </style>
 
             <section class="global-result">
