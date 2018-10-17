@@ -3,7 +3,6 @@
     <head>
         <title>CSS Селекторс 2000</title>
         <meta charset="UTF-8">
-
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -13,6 +12,22 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                article:not(:hover) > div
+                {
+                    opacity: .5;
+                }
+
+                div
+                {
+                    opacity: .2;
+                }
+
+                div:hover
+                {
+                    opacity: 1;
+                }
+
             </style>
 
             <section class="global-result">

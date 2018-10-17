@@ -3,24 +3,32 @@
     <head>
         <title>CSS Селекторс 2000</title>
         <meta charset="UTF-8">
-
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>border-top: 1px solid #000</code> и <code>background: &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>border-top: 1px solid #000</code></p>
 
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                article :nth-of-type(n+2):not(:last-child)
+                {
+                    border-top: 1px solid #000;
+                    border-collapse: collapse;
+                }
+
+                article :nth-of-type(2n+1):not(:first-child)
+                {
+                    background-color: #ff6;
+                }
+
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
                     <h1>Заголовок</h1>
-                    <p style="display: none">
-                        Описание заголовка
-                    </p>
                     <hr>
                     <article>Первый</article>
                     <article>Второй</article>
