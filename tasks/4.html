@@ -13,6 +13,16 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+                article:nth-child(n+3){
+                    background: #ffff66;
+                }
+                article~article:nth-child(odd){
+                    background: #fff;
+                }
+                article~article:nth-child(n+2) {
+                    border-top: 1px solid #000;
+                }
+
             </style>
 
             <section class="global-result">
