@@ -12,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article.global-scope input:checked ~ input
+                {
+                    outline: 1px solid #ff6698;
+                }
+                
+                article.global-scope input:checked
+                {
+                    outline: none !important;
+                }
             </style>
 
             <section class="global-result">
