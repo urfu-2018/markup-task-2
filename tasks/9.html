@@ -12,7 +12,25 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .link:not([href]):hover
+                {
+                    opacity: .5;
+                }
+
+                .link[href]:hover
+                {
+                    color: #ff6698;
+                }
+
+                .link[href]:active
+                {
+                    color: #98ff66;
+                }
+
+                .link[href]:not(link)
+                {
+                    color: #ff6;
+                }
             </style>
 
             <section class="global-result">
