@@ -12,7 +12,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                [value='invalid-email']:enabled
+                {
+                    border: 3px solid #ff6698;
+                }
+
+                [value='email@yandex.ru']:enabled
+                {
+                    border: 3px solid #98ff66;
+                }
+
+                [type='email']:focus
+                {
+                    border: 3px solid #6698ff;
+                }
             </style>
 
             <section class="global-result">
