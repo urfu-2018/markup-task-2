@@ -14,22 +14,27 @@
 
     <main class="global-results">
         <style>
-            a:hover:first-child 
+            a[href]:active 
             {
                 color: #ff6698;
             }
 
-            a:hover + a 
+            a[href]:visited:hover
+            {
+                color: #ff6698;
+            }
+            
+            a:not([href]):hover 
             {
                 opacity: .5;
             }
 
-            a:active:first-child 
+            a[href]:active
             {
                 color: #98ff66 !important;
             }
 
-            a:visited:first-child 
+            a[href]:visited 
             {
                 color: #ffb366;
             }
