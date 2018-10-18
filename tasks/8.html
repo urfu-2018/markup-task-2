@@ -12,7 +12,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a[href^='https://']:not([href^='https://my-site']),
+                a[href^='http://']:not([href^='http://my-site']),
+                a[href^='//']:not([href^='//my-site'])
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">
