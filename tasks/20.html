@@ -12,7 +12,26 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div div
+                {
+                    background: #ff6698;
+                }
+
+                div div:only-child
+                {
+                    background: #fff;
+                }
+
+                div:first-child + div:last-child
+                {
+                    background: #fff;
+                }
+
+                div div:first-child:nth-last-child(2)
+                {
+                    background: #fff;
+                }
+
             </style>
 
             <section class="global-result">
