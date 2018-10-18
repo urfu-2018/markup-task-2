@@ -12,7 +12,42 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .link
+                {
+                    color: #000;
+                }
+
+                .link[href*="https"]
+                {
+                    color: #6698ff;
+                }
+
+                .link:hover
+                {
+                    opacity: 0.5;
+                }
+
+                .link[href*="https"]:hover
+                {
+                    opacity: 1;
+                    color: #ff6698;
+                }
+
+                .link[href*="https"]:active
+                {
+                    color: #98ff66;
+                }
+
+                .link[href*="https"]:visited
+                {
+                    color: #ffb366;
+                }
+
+                .link:active,
+                .link:visited
+                {
+                    opacity: 1;
+                }
             </style>
 
             <section class="global-result">
