@@ -12,7 +12,17 @@
 
         <main class="global-results">
             <style>
-                div:not(:hover)
+                article div
+                {
+                    opacity: .7;
+                }
+
+                article div:hover
+                {
+                    opacity: 1;
+                }
+
+                article:hover div:not(:hover)
                 {
                     opacity: .3;
                 }
