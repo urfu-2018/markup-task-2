@@ -12,17 +12,19 @@
 
         <main class="global-results">
             <style>
-                [value='invalid-email']
+                input:valid
                 {
-                border: 3px solid #ff6698;
+                    border: 3px solid #98ff66;
                 }
-                [value='invalid-email']:focus
+
+                input:not(:valid)
                 {
-                border: 3px solid #6698ff;
+                    border: 3px solid #ff6698;
                 }
-                [value='email@yandex.ru']
+
+                input:focus
                 {
-                border: 3px solid #98ff66;
+                    border: 3px solid #6698ff;
                 }
             </style>
 
