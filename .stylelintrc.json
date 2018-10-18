@@ -2,6 +2,7 @@
  "extends": "stylelint-config-hrundel",
  "processors": ["@mapbox/stylelint-processor-arbitrary-tags"],
  "rules": {
-   "selector-max-id": 1
+   "selector-max-id": 1,
+   "block-opening-brace-newline-before": "never-single-line"
  }
 }

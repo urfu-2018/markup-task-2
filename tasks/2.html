@@ -12,7 +12,21 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope .c1.c2 {
+                    background: #699afc;
+                }
+
+                .global-scope :not(:nth-child(3)) {
+                    border: 2px solid #000;
+                }
+    
+                .global-scope .c1 {
+                    background: #fd6899;
+                }
+
+                .global-scope .c2 {
+                    background: #fdb26c;
+                }
             </style>
 
             <section class="global-result">
