@@ -12,7 +12,12 @@
 
         <main class="global-results">
             <style>
-                a[target='_blank']
+                a:not([href^='/']):not([href*='//my-site.ru'])
+                {
+                    color: #ff6698;
+                }
+
+                a[rel='external']
                 {
                     color: #ff6698;
                 }
