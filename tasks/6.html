@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>CSS Селекторс 2000</title>
-        <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>color: &lt;color&gt;</code></p>
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
 
-        <main class="global-results">
-            <style>
-    /* your styles here */
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
 
-				a
-				{
-				    color: #ff6698;
-				}
+<body>
+    <h1 class="global-heading">&nbsp;</h1>
+    <p>Решите задачу, используя <code>color: &lt;color&gt;</code></p>
 
-				a[href='https://vk.ru']
-				{
-				    color: #6698ff;
-				}
-            </style>
+    <main class="global-results">
+        <style>
+            /* your styles here */
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <a href="https://vk.ru">vk.ru</a>
-                    <a href="https://yandex.ru">yandex.ru</a>
-                    <a href="https://market.yandex.ru/">market.yandex.ru</a>
-                </article>
-            </section>
+            a[href*='yandex.ru'] 
+            {
+                color: #ff6698;
+            }
+        </style>
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+        <section class="global-result">
+            <article class="global-scope">
+                <a href="https://vk.ru">vk.ru</a>
+                <a href="https://yandex.ru">yandex.ru</a>
+                <a href="https://market.yandex.ru/">market.yandex.ru</a>
+            </article>
+        </section>
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+        <section class="global-result">
+            <img class="global-goal">
+        </section>
+    </main>
 
-        <script src="../global.js"></script>
-    </body>
+    <nav class="global-nav">
+        <a class="global-prev">Предыдущее</a>
+        <a class="global-next">Следующее</a>
+    </nav>
+
+    <script src="../global.js"></script>
+</body>
+
 </html>
