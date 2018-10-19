@@ -12,7 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a[href$='.zip'][download]:after
+                {
+                    content: '↓';
+                    padding-left: .2em;
+                }
             </style>
 
             <section class="global-result">
