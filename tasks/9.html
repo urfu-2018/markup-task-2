@@ -16,45 +16,30 @@
         <style>
             /* your styles here */
 
-            .link[href] 
+            a:hover 
             {
-                color: #6698ff;
+                opacity: .3;
+            }
+
+            a:active 
+            {
                 opacity: 1;
             }
 
-            .link[href]:visited
+            a[href]:visited 
             {
                 color: #ffb366;
-                opacity: 1;
             }
 
-            .link[href]:active 
-            {
-                color: #98ff66;
-                opacity: 1;
-            }
-
-            .link[href]:hover
-             {
-                color: #ff6698;
-                opacity: .5;
-            }
-
-            .link:hover 
-            {
-                opacity: .5;
-            }
-
-            .link[href]:visited:active
-            {
-                color: #98ff66;
-                opacity: 1;
-            }
-
-            .link[href]:visited:hover
+            a[href]:hover 
             {
                 color: #ff6698;
-                opacity: .5;
+                opacity: 1;
+            }
+
+            a[href]:active 
+            {
+                color: #98ff66;
             }
         </style>
 
