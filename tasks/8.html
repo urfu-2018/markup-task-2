@@ -12,10 +12,17 @@
 
         <main class="global-results">
             <style>
-                a:not([href*='my-site.ru'])
+                a[href*='my-site.ru'],
+                a:not([href*='.'])
+                {
+                    color: blue;
+                }
+
+                a
                 {
                     color: #ff6698;
                 }
+
             </style>
 
             <section class="global-result">
