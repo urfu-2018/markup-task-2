@@ -12,7 +12,8 @@
 
         <main class="global-results">
             <style>
-                .global-scope :nth-child(2) ~ div > div
+                .red-gt2 > div:nth-last-child(n+3):first-child,
+                .red-gt2 > div:nth-last-child(n+3):first-child ~ div
                 {
                     background: #ff6698;
                 }

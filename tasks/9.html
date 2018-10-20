@@ -22,9 +22,14 @@
                     color: #ff6698;
                 }
 
-                a[href='https://ya.ru']:hover ~ a
+                a:not([href]):hover
                 {
                     opacity: .5;
+                }
+
+                a[href='https://ya.ru']:link
+                {
+                    color: #6698ff;
                 }
 
                 a[href='https://ya.ru']:active
