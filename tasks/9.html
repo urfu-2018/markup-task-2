@@ -14,22 +14,27 @@
             <style>
                 a:not([href]):hover
                 {
-                    opacity: 0.5;
+                    opacity: .5;
                 }
 
-                a[href]:hover
+                a:not([href]):active
                 {
-                    color:deeppink;
+                    opacity: 1;
                 }
 
                 a[href]:visited
                 {
-                    color:orange;
+                    color: orange;
+                }   
+
+                a[href]:hover
+                {
+                    color: deeppink;
                 }
-                
+
                 a[href]:active
                 {
-                    color:green;
+                    color: green;
                 }
             </style>
 

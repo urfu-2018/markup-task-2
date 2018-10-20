@@ -11,18 +11,17 @@
         <p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя <code>background: &lt;color&gt;</code> и самую сильную магию</p>
 
         <main class="global-results">
-            <style>
-                
+            <style>                
                 div > :-moz-any(div:nth-last-child(3), div:nth-last-child(4)),
-                div > :-moz-any(div:nth-last-child(3), div:nth-last-child(4)) ~ *
+                div > :-moz-any(div:nth-last-child(3), div:nth-last-child(4)) ~ div
                 {
-                    background-color: #BADA55;
+                    background-color: #bada55;
                 }
 
                 div > :-webkit-any(div:nth-last-child(3), div:nth-last-child(4)),
-                div > :-webkit-any(div:nth-last-child(3), div:nth-last-child(4)) ~ *
+                div > :-webkit-any(div:nth-last-child(3), div:nth-last-child(4)) ~ div
                 {
-                    background-color: #BADA55;
+                    background-color: #bada55;
                 }
             </style>
 
