@@ -12,8 +12,11 @@
 
         <main class="global-results">
             <style>
-                article ~ input:checked {
-                    outline: 1px solid #6698ff
+                input:checked {
+                    outline: none !important;
+                }
+                input:checked ~ input {
+                    outline: 1px solid #ff6698;
                 }
             </style>
 
