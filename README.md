@@ -19,10 +19,10 @@
 
 Используемые цвета:
 
-![](https://dummyimage.com/15/ff6698.jpg?text=+)`#ff6698`  
-![](https://dummyimage.com/15/ffb366.jpg?text=+)`#ffb366`  
-![](https://dummyimage.com/15/ffff66.jpg?text=+)`#ffff66`  
-![](https://dummyimage.com/15/98ff66.jpg?text=+)`#98ff66`  
-![](https://dummyimage.com/15/6698ff.jpg?text=+)`#6698ff`
+![](https://dummyimage.com/15/ff6698.jpg?text=+)`#ff6698`  pink
+![](https://dummyimage.com/15/ffb366.jpg?text=+)`#ffb366`  orange
+![](https://dummyimage.com/15/ffff66.jpg?text=+)`#ffff66`  yellow
+![](https://dummyimage.com/15/98ff66.jpg?text=+)`#98ff66`  green
+![](https://dummyimage.com/15/6698ff.jpg?text=+)`#6698ff`  blue
 
 <img src="https://user-images.githubusercontent.com/11533472/46813130-8af30580-cd8f-11e8-82b1-39b7a7def8b5.png">
