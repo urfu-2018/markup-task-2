@@ -12,7 +12,8 @@
 
         <main class="global-results">
             <style>
-                [target]:not([download])
+                a:not([href*='my-site']):not([href^='/']),
+                a:not([href*='my-site'])[href^='//']
                 {
                     color: #ff6698;
                 }
