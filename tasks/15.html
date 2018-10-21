@@ -12,7 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                ul > li > a[href$='.zip']::after
+                {
+                    content: '↓';
+                    margin-left: 3px;
+                }
             </style>
 
             <section class="global-result">

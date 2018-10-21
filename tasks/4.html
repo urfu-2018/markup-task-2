@@ -12,7 +12,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article > article:nth-child(even)
+                {
+                    background: #ff6;
+                }
+
+                article > article
+                {
+                    border-top: 1px solid black;
+                }
+
+                p + hr + article
+                {
+                    border-top: none;
+                }
             </style>
 
             <section class="global-result">
