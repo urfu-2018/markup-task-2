@@ -12,9 +12,14 @@
 
         <main class="global-results">
             <style>
-                [href*='\/\/']
+                li > a:not([href*='my-site'])
                 {
                     color: #ff6698;
+                }
+
+                li > a:not([href*='.'])
+                {
+                    color: #00e;
                 }
                 /* your styles here */
             </style>
