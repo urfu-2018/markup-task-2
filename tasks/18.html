@@ -12,19 +12,20 @@
 
         <main class="global-results">
             <style>
-                article > div
+                div
                 {
                     opacity: .5;
                 }
 
-                article:hover > div
+                article:hover div,
+                div:hover ~ div
                 {
                     opacity: .3;
                 }
 
-                div:hover
+                article div:hover
                 {
-                    opacity: 1 !important;
+                    opacity: 1;
                 }
             </style>
 
