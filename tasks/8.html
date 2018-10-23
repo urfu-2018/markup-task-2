@@ -12,7 +12,7 @@
 
         <main class="global-results">
             <style>
-                a:not([href*='//my-site.ru']):not([href^='/http/'])
+                a[href*='//']:not([href*='//my-site.ru'])
                 {
                     color: red;
                 }
@@ -38,6 +38,9 @@
                         </li>
                         <li>
                             <a href="//google.com" rel="external" target="_blank">Ссылка 5</a>
+                        </li>
+                        <li>
+                            <a href="/" target="_blank">Ссылка 6</a>
                         </li>
                     </ul>
                 </article>
