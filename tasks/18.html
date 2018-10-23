@@ -14,13 +14,19 @@
             <style>
                 div
                 {
-                    opacity: .3;
+                    opacity: .6;
                 }
 
                 div:hover
                 {
                     opacity: 1 !important;
                 }
+
+                article:hover > div:not(:hover)
+                {
+                    opacity: .3;
+                }
+
 
             </style>
 
