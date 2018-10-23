@@ -12,7 +12,8 @@
 
         <main class="global-results">
             <style>
-                a:not([href*='/my-site.ru']):not([href^='/h'])
+                a:not([href*='/my-site.ru']):not([href^='/']),
+                a[href^='//']:not([href*='/my-site.ru']) 
                 {
                     color: #ff6698;
                 }
