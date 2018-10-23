@@ -12,14 +12,14 @@
 
 <main class="global-results">
     <style>
-        hr ~ article:nth-child(2n)
+        hr ~ article:nth-child(even)
         {
             background: #ff6;
         }
 
-        article > article ~ article
+        article + article
         {
-            border-top: 1px solid black;
+            border-top: 1px solid #000;
         }
     </style>
 
