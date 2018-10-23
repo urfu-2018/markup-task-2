@@ -12,9 +12,14 @@
 
         <main class="global-results">
             <style>
-                a:not([href*='https://ya.ru']):hover
+                a:not([href]):hover
                 {
                     opacity: .3;
+                }
+
+                a:not([href]):active
+                {
+                    opacity: 1;
                 }
 
                 a[href*='https://ya.ru']:link
