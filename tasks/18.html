@@ -17,15 +17,16 @@
                     opacity: .5;
                 }
 
-                div:hover
-                {
-                    opacity: 1 !important;
-                }
-
                 .global-scope:hover div
                 {
                     opacity: .25;
                 }
+
+                .global-scope:hover div:hover
+                {
+                    opacity: 1;
+                }
+
             </style>
 
             <section class="global-result">
