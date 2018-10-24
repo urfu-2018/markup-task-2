@@ -12,19 +12,14 @@
 
         <main class="global-results">
             <style>
-                article:nth-child(2n)
-                {
-                    background: #ff6;
-                }
-
-                article > article
+                article:nth-of-type(n+2):not(:last-child)
                 {
                     border-top: 1px solid #000;
                 }
 
-                article:nth-child(4)
+                article:nth-of-type(2n+1):not(:first-child)
                 {
-                    border-top: none;
+                    background: #ff6;
                 }
             </style>
 
