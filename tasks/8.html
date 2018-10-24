@@ -12,10 +12,10 @@
 
         <main class="global-results">
             <style>
-                a[target='_blank']
+                a:not([href^='/http/']):not([href*='my-site']):not([href^='/https/'])
                 {
                     color: #ff6698;
-                }            
+                }
             </style>
 
             <section class="global-result">
