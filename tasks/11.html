@@ -12,20 +12,23 @@
 
         <main class="global-results">
             <style>
-                .global-scope input:first-child
-                {
-                    border: 2px solid #ff6698;
-                }
-
-                .global-scope input:last-child
-                {
-                    border: 2px solid #98ff66;
-                }
 
                 .global-scope input:focus
                 {
                     border: 2px solid #6698ff;
                 }
+
+                .global-scope input:first-child:not(:focus)
+                {
+                    border: 2px solid #ff6698;
+                }
+
+                .global-scope input:last-child:not(:focus)
+                {
+                    border: 2px solid #98ff66;
+                }
+
+
             </style>
 
             <section class="global-result">
