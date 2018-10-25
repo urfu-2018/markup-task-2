@@ -12,19 +12,14 @@
 
         <main class="global-results">
             <style>
-                div
+                div:empty
                 {
                     background: #ff6;
                 }
 
-                div:nth-child(odd)
+                div:not(:empty)
                 {
                     background: #ffb366;
-                }
-
-                div:nth-child(5)
-                {
-                    background: #ff6;
                 }
             </style>
 
