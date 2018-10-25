@@ -12,19 +12,14 @@
 
         <main class="global-results">
             <style>
-                .global-scope div
+                .global-scope div:empty
                 {
                     background: #ff6;
                 }
 
-                .global-scope div:nth-child(2n + 1)
+                .global-scope div:not(:empty)
                 {
                     background: #ffb366;
-                }
-
-                .global-scope div:nth-child(5)
-                {
-                    background: #ff6;
                 }
             </style>
 
