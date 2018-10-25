@@ -12,10 +12,13 @@
 
         <main class="global-results">
             <style>
-                .global-scope a[target='_blank']
+                .global-scope a[href^='http://']:not([href^='http://my-site.ru']),
+                .global-scope a[href^='https://']:not([href^='https://my-site.ru']),
+                .global-scope a[rel='external']
                 {
                     color: #ff6698;
                 }
+
             </style>
 
             <section class="global-result">
