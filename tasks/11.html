@@ -12,19 +12,25 @@
 
         <main class="global-results">
             <style>
-                input[type='email']:invalid
+                input
                 {
-                    border: 3px solid #ff6698;
+                    border-width: 3px;
+                    border-style: solid;
                 }
 
-                input[type='email']:valid
+                input:invalid
                 {
-                    border: 3px solid #98ff66;
+                    border-color: #ff6698;
                 }
 
-                input[type='email']:focus
+                input:valid
                 {
-                    border: 3px solid #6698ff;
+                    border-color: #98ff66;
+                }
+
+                input:focus
+                {
+                    border-color: #6698ff;
                 }
             </style>
 
