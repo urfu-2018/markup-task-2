@@ -12,14 +12,15 @@
 
         <main class="global-results">
             <style>
-                ul li a
-                {
-                    color: #6698ff;
-                }
-
-                ul li a[target='_blank']
+                .global-scope a
                 {
                     color: #ff6698;
+                }
+
+                .global-scope a[href^='/']:not([href^='//']),
+                .global-scope a[href*='my-site.ru']
+                {
+                    color: #6698ff;
                 }
             </style>
 
