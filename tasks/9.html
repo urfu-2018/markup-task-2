@@ -10,39 +10,40 @@
         <h1 class="global-heading">&nbsp;</h1>
         <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
 
+        <style>
+            .link
+            {
+                color: #6698ff;
+            }
+
+            .link:hover
+            {
+                color: #ff6698;
+            }
+
+            .link:visited
+            {
+                color: #ffb366;
+            }
+
+            .link:focus
+            {
+                color: #98ff66;
+            }
+
+            .link:not([href])
+            {
+                color: black;
+            }
+
+            .link:not([href]):hover
+            {
+                opacity: .3;
+            }
+
+
+        </style>
         <main class="global-results">
-            <style>
-                .link:hover
-                {
-                    opacity: .3;
-                }
-
-                .link:visited
-                {
-                    color: black;
-                }
-
-                .link:active
-                {
-                    color: black;
-                }
-
-                a[href='https://ya.ru']:hover
-                {
-                    color: #ff6698;
-                    opacity: 1;
-                }
-
-                a[href='https://ya.ru']:visited
-                {
-                    color: #ffb366;
-                }
-
-                a[href='https://ya.ru']:active
-                {
-                    color: #98ff66;
-                }
-            </style>
 
             <section class="global-result">
                 <article class="global-scope">
