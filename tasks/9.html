@@ -27,9 +27,14 @@
                     color: #ff6698;
                 }
 
-                .link[href]:hover + .link:not([href])
+                .link[href]:hover ~ .link:not([href])
                 {
                     opacity: .5;
+                }
+
+                .link[href]:active ~ .link:not([href])
+                {
+                    opacity: 1;
                 }
 
                 .link[href]:active
