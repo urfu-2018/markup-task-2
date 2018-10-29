@@ -10,23 +10,23 @@
         <h1 class="global-heading">&nbsp;</h1>
         <p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
 
+        <style>
+            input:invalid:not(:focus)
+            {
+                border: 3px solid #ff6698;
+            }
+
+            input:valid:not(:focus)
+            {
+                border: 3px solid #98ff66;
+            }
+
+            input:focus
+            {
+                border: 3px solid #6698ff;
+            }
+        </style>
         <main class="global-results">
-            <style>
-                input[value='invalid-email']:focus
-                {
-                    border: 3px solid #ff6698;
-                }
-
-                input
-                {
-                    border: 3px solid #6698ff;
-                }
-
-                input[value='email@yandex.ru']:focus
-                {
-                    border: 3px solid #98ff66;
-                }
-            </style>
 
             <section class="global-result">
                 <article class="global-scope">
