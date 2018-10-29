@@ -12,9 +12,14 @@
 
         <main class="global-results">
             <style>
-                a:nth-child(2):hover
+                a:not([href]):hover
                 {
                     opacity: .5;
+                }
+
+                a:not([href]):active
+                {
+                    opacity: 1;
                 }
 
                 a[href]:hover
