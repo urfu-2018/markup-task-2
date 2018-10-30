@@ -12,24 +12,24 @@
 
         <main class="global-results">
             <style>
-                a.link[href*='ya.ru']:visited
+                .link:not([href]):hover
+                {
+                    opacity: .5;
+                }
+
+                article > [href]:visited
                 {
                     color: #ffb366;
                 }
 
-                a.link[href*='ya.ru']:hover
+                article > [href]:hover
                 {
                     color: #ff6698;
                 }
 
-                a.link[href*='ya.ru']:active
+                article > [href]:active
                 {
                     color: #98ff66;
-                }
-
-                a.link:not([href*='ya.ru']):hover
-                {
-                    opacity: .5;
                 }
             </style>
 
