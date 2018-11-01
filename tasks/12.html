@@ -14,19 +14,13 @@
     <style>
         /* your styles here */
 
-        div
+        div:empty
         {
-            background: #ff66;
+            background: #ff6;
         }
-
-        div:nth-of-type(2n+1)
+        div:not(:empty)
         {
             background: #ffb366;
-        }
-
-        .global-scope div:nth-of-type(5)
-        {
-            background: #ff66;
         }
     </style>
 

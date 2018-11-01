@@ -15,20 +15,10 @@
     <style>
         /* your styles here */
 
-        div > div
+        .red-gt2 div:nth-last-child(n + 3),
+        .red-gt2 div:nth-last-child(n + 3) ~ div
         {
             background: #ff6698;
-        }
-
-        div:only-child
-        {
-            background: white;
-        }
-
-        div:nth-child(1):nth-last-child(2),
-        div:nth-child(2):nth-last-child(1)
-        {
-            background: white;
         }
     </style>
 

@@ -14,9 +14,15 @@
     <style>
         /* your styles here */
 
-        .link:hover
+        .link:not([href]):hover
         {
             opacity: .5;
+        }
+
+        .global-scope .link:not([href]):active,
+        .global-scope .link:not([href]):visited
+        {
+            opacity: 1;
         }
 
         .global-scope .link[href='https://ya.ru']:hover
