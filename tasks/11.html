@@ -12,21 +12,20 @@
 
         <main class="global-results">
             <style>
-                [value='invalid-email']
+                input[type='email']
                 {
                     border: 3px solid #ff6698;
                 }
 
-                [value='invalid-email']:focus
+                input[type='email']:focus
                 {
-                    border: 3px solid #6698ff;
+                    border-color: #6698ff;
                 }
 
-                [value='email@yandex.ru']
+                input[type='email']:valid
                 {
-                    border: 3px solid #98ff66;
+                    border-color: #98ff66;
                 }
-
             </style>
 
             <section class="global-result">
