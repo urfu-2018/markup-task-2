@@ -12,29 +12,25 @@
 
         <main class="global-results">
             <style>
-                a:link[href] 
-                {
-                    color: #6698ff;
-                }
-
-                a:hover[href] 
-                {
-                    color: #ff6698;
-                }
-                
-                a:active[href] 
-                {
-                    color: #98ff66;
-                }
-
-                a:visited 
+               .link:first-child:visited
                 {
                     color: #ffb366;
                 }
-
-                a:hover 
+                .link:first-child:hover
                 {
-                    opacity: .2;
+                    color: #ff6698;
+                }
+                .link:first-child:focus
+                {
+                    color: #98ff66;
+                }
+                .link:last-child:hover
+                {
+                    opacity: .5;
+                }
+                .link:last-child:active
+                {
+                    opacity: 1;
                 }
             </style>
 

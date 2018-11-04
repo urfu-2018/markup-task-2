@@ -12,19 +12,15 @@
 
         <main class="global-results">
             <style>
-                div 
+                div:empty 
+                {
+                    background-color: #ff6;
+                    
+                }
+
+                div:not(:empty)
                 {
                     background-color: #ffb366;
-                }
-
-                div:nth-child(2n) 
-                {
-                    background-color: #ff6;
-                }
-
-                div:nth-child(5) 
-                {
-                    background-color: #ff6;
                 }
             </style>
 
