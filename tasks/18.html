@@ -14,14 +14,19 @@
             <style>
                 /* your styles here */
 
-                div
+                .global-scope div
                 {
                     opacity: .5;
                 }
 
-                div:hover
+                .global-scope div:hover
                 {
                     opacity: 1;
+                }
+
+                .global-scope:hover div:not(:hover)
+                {
+                    opacity: .25;
                 }
             </style>
 
