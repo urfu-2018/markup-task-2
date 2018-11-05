@@ -12,7 +12,9 @@
 
         <main class="global-results">
             <style>
-                [target='_blank']
+                a[href^='https://']:not([href^='https://my-site']),
+                a[href^='http://']:not([href^='http://my-site']),
+                a[href^='//']:not([href^='//my-site'])
                 {
                     color: #ff6698;
                 }
