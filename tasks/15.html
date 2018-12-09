@@ -12,7 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                [download]:not([href$='ncrd'])::after
+                {
+                    content: '↓';
+                    display: inline;
+                }
             </style>
 
             <section class="global-result">
